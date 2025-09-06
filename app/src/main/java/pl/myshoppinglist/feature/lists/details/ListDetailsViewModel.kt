@@ -25,7 +25,7 @@ class ListDetailsViewModel @Inject constructor(
     var listName: String? = null
         private set
 
-    val itemsFlow: Flow<List<ShoppingItemEntity>> = itemDao.observeByList(listId)
+    val itemsFlow: Flow<List<ShoppingItemEntity>> = itemDao.observeAll()
 
     fun toggleChecked(itemId: Long, checked: Boolean) {
         viewModelScope.launch { itemDao.setChecked(itemId, checked) }
@@ -38,7 +38,6 @@ class ListDetailsViewModel @Inject constructor(
     fun addItem(name: String, quantity: Double) {
         viewModelScope.launch {
             val entity = ShoppingItemEntity(
-                listId = listId,
                 name = name,
                 quantity = quantity,
                 unit = "",

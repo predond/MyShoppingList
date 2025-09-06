@@ -1,13 +1,11 @@
 package pl.myshoppinglist.navigation
 
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -15,11 +13,11 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import pl.myshoppinglist.feature.categories.CategoriesScreen
-import pl.myshoppinglist.feature.categories.CategoryViewModel
 import pl.myshoppinglist.feature.items.ItemsScreen
 import pl.myshoppinglist.feature.lists.ListsScreen
 import pl.myshoppinglist.feature.lists.details.ShoppingListDetailScreen
 import pl.myshoppinglist.feature.settings.SettingsScreen
+import pl.myshoppinglist.feature.storages.StoragesScreen
 
 @Composable
 fun MyShoppingListApp() {
@@ -61,10 +59,8 @@ fun MyShoppingListApp() {
                 ShoppingListDetailScreen(navController = navController)
             }
             composable(Dest.Items.route) { ItemsScreen() }
-            composable(Dest.Categories.route) {
-                val viewModel: CategoryViewModel = hiltViewModel()
-                CategoriesScreen(viewModel)
-            }
+            composable(Dest.Categories.route) { CategoriesScreen() }
+            composable(Dest.Storages.route) { StoragesScreen() }
             composable(Dest.Settings.route) { SettingsScreen() }
         }
     }

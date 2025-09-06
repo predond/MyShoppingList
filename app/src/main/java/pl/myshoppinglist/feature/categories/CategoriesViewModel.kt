@@ -1,5 +1,7 @@
 package pl.myshoppinglist.feature.categories
 
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -10,7 +12,7 @@ import pl.myshoppinglist.data.local.entity.CategoryEntity
 import javax.inject.Inject
 
 @HiltViewModel
-class CategoryViewModel @Inject constructor(
+class CategoriesViewModel @Inject constructor(
     private val dao: CategoryDao
 ) : ViewModel() {
 
@@ -25,7 +27,7 @@ class CategoryViewModel @Inject constructor(
         }
     }
 
-    fun addCategory(name: String, color: Long = 0xFF9E9E9E) {
+    fun addCategory(name: String, color: Int = Color.White.toArgb()) {
         viewModelScope.launch {
             dao.upsert(CategoryEntity(name = name, color = color))
         }

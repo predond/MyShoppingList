@@ -5,12 +5,14 @@ import androidx.compose.material.icons.outlined.Category
 import androidx.compose.material.icons.outlined.ListAlt
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material.icons.outlined.ShoppingCart
+import androidx.compose.material.icons.outlined.Warehouse
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class Dest(val route: String, val label: String, val icon: ImageVector) {
     data object Lists : Dest("lists", "Listy", Icons.Outlined.ListAlt)
     data object Items : Dest("items", "Pozycje", Icons.Outlined.ShoppingCart)
     data object Categories : Dest("categories", "Kategorie", Icons.Outlined.Category)
+    data object Storages : Dest("storages", "Magazyny", Icons.Outlined.Warehouse)
     data object Settings : Dest("settings", "Ustawienia", Icons.Outlined.Settings)
 }
 

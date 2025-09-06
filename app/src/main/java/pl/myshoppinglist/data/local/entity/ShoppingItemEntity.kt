@@ -7,22 +7,14 @@ import androidx.room.PrimaryKey
 
 @Entity(
     tableName = "shopping_items",
-    foreignKeys = [
-        ForeignKey(
-            entity = ShoppingListEntity::class,
-            parentColumns = ["id"],
-            childColumns = ["listId"],
-            onDelete = ForeignKey.CASCADE
-        )
-    ],
-    indices = [Index("listId"), Index("name")]
+    indices = [Index("name"), Index("categoryId"), Index("storageId")]
 )
 data class ShoppingItemEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
-    val listId: Long,
     val name: String,
     val quantity: Double = 1.0,
     val unit: String = "",
     val checked: Boolean = false,
-    val categoryId: Long? = null
+    val categoryId: Long? = null,
+    val storageId: Long? = null
 )
