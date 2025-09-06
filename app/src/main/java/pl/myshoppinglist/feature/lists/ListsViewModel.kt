@@ -15,7 +15,7 @@ data class ListsUiState(
     val lists: List<ListItem> = emptyList()
 )
 
-data class ListItem(val id: Long, val name: String)
+data class ListItem(val id: Long, val name: String, val textColor: Int, val backgroundColor: Int)
 
 @HiltViewModel
 class ListsViewModel @Inject constructor(
@@ -24,13 +24,16 @@ class ListsViewModel @Inject constructor(
 
     val uiState: StateFlow<ListsUiState> =
         repo.observeLists()
-            .map { lists -> ListsUiState(lists = lists.map { ListItem(it.id, it.name) }) }
+            .map { lists -> ListsUiState(lists = lists.map { ListItem(it.id, it.name, it.textColor, it.backgroundColor) }) }
             .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), ListsUiState())
 
     fun addList(name: String) {
         viewModelScope.launch { repo.createList(name) }
     }
-    fun archive(id: Long) {
-        viewModelScope.launch { repo.archiveList(id) }
+    fun updateList(id: Long, newName: String, textColor: Int, backColor: Int) {
+        viewModelScope.launch { repo.updateList(id, newName, textColor, backColor) }
+    }
+    fun deleteList(id: Long) {
+        viewModelScope.launch { repo.deleteList(id) }
     }
 }

@@ -98,6 +98,9 @@ dependencies {
     // DataStore
     implementation(libs.androidx.datastore.preferences)
 
+    // Drag'n'drop
+    implementation(libs.reorderable)
+
     // Kotlin Coroutines
     implementation(libs.kotlinx.coroutines.android)
 

@@ -12,8 +12,15 @@ interface ShoppingListDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(entity: ShoppingListEntity): Long
 
+    @Query("UPDATE shopping_lists SET name = :newName, textColor = :textColor, backgroundColor = :backColor WHERE id = :id")
+    suspend fun updateList(id: Long, newName: String, textColor: Int, backColor: Int)
+
     @Query("UPDATE shopping_lists SET archived = 1 WHERE id = :id")
     suspend fun archive(id: Long)
 
-    @Delete suspend fun delete(entity: ShoppingListEntity)
+    @Delete
+    suspend fun delete(entity: ShoppingListEntity)
+
+    @Query("DELETE FROM shopping_lists WHERE id = :id")
+    suspend fun delete(id: Long)
 }

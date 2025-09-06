@@ -25,7 +25,7 @@ abstract class BindModule {
 object AppModule {
     @Provides @Singleton
     fun provideDb(@ApplicationContext ctx: Context): AppDatabase =
-        Room.databaseBuilder(ctx, AppDatabase::class.java, "shopping.db").build()
+        Room.databaseBuilder(ctx, AppDatabase::class.java, "shopping.db").fallbackToDestructiveMigration().build()
 
     @Provides fun provideListDao(db: AppDatabase) = db.shoppingListDao()
     @Provides fun provideItemDao(db: AppDatabase) = db.shoppingItemDao()

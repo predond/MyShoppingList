@@ -15,14 +15,18 @@ class ShoppingRepositoryImpl @Inject constructor(
 
     override fun observeLists(): Flow<List<ShoppingList>> =
         listDao.observeActive().map { list ->
-            list.map { e -> ShoppingList(e.id, e.name, e.createdAt, e.archived) }
+            list.map { e -> ShoppingList(e.id, e.name, e.textColor, e.backgroundColor, e.createdAt, e.archived) }
         }
 
     override suspend fun createList(name: String) {
         listDao.upsert(ShoppingListEntity(name = name, createdAt = Instant.now()))
     }
 
-    override suspend fun archiveList(id: Long) {
-        listDao.archive(id)
+    override suspend fun updateList(id: Long, newName: String, textColor: Int, backgroundColor: Int) {
+        listDao.updateList(id, newName, textColor, backgroundColor)
+    }
+
+    override suspend fun deleteList(id: Long) {
+        listDao.delete(id)
     }
 }

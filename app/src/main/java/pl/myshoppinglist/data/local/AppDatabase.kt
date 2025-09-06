@@ -13,7 +13,7 @@ import pl.myshoppinglist.data.local.entity.ShoppingListEntity
 
 @Database(
     entities = [ShoppingListEntity::class, ShoppingItemEntity::class, CategoryEntity::class],
-    version = 1,
+    version = 2,
     exportSchema = true
 )
 @TypeConverters(InstantConverters::class)
