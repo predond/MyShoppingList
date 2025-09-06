@@ -1,0 +1,962 @@
+kotlin version: 2.2.10
+error message: java.lang.RuntimeException: Exception while generating code for:
+FUN LOCAL_FUNCTION_FOR_LAMBDA name:ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8 visibility:private modality:FINAL returnType:kotlin.Unit?
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$lists$delegate index:0 type:androidx.compose.runtime.State<kotlin.collections.List<pl.myshoppinglist.data.local.entity.ShoppingListEntity>>
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$reorderState index:1 type:org.burnoutcrew.reorderable.ReorderableLazyListState
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:2 type:pl.myshoppinglist.feature.lists.ListsViewModel
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onOpenListDetail index:3 type:kotlin.Function1<kotlin.Long, kotlin.Unit>?
+  VALUE_PARAMETER kind:Regular name:$this$LazyColumn index:4 type:androidx.compose.foundation.lazy.LazyListScope
+  BLOCK_BODY
+    CALL 'public final fun itemsIndexed$default <T> (<this>: androidx.compose.foundation.lazy.LazyListScope, items: kotlin.collections.List<T of androidx.compose.foundation.lazy.LazyDslKt.itemsIndexed$default>, key: kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, @[ParameterName(name = "item")] T of androidx.compose.foundation.lazy.LazyDslKt.itemsIndexed$default, kotlin.Any>?, contentType: kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, @[ParameterName(name = "item")] T of androidx.compose.foundation.lazy.LazyDslKt.itemsIndexed$default, kotlin.Any?>?, itemContent: @[ExtensionFunctionType] kotlin.Function5<androidx.compose.foundation.lazy.LazyItemScope, @[ParameterName(name = "index")] kotlin.Int, @[ParameterName(name = "item")] T of androidx.compose.foundation.lazy.LazyDslKt.itemsIndexed$default, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>, $mask0: kotlin.Int, $handler: kotlin.Any?): kotlin.Unit [inline] declared in androidx.compose.foundation.lazy.LazyDslKt' type=kotlin.Unit origin=DEFAULT_DISPATCH_CALL
+      TYPE_ARG T: pl.myshoppinglist.data.local.entity.ShoppingListEntity
+      ARG <this>: GET_VAR '$this$LazyColumn: androidx.compose.foundation.lazy.LazyListScope declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8' type=androidx.compose.foundation.lazy.LazyListScope origin=null
+      ARG items: CALL 'private final fun ListsScreen$lambda$2 ($lists$delegate: androidx.compose.runtime.State<kotlin.collections.List<pl.myshoppinglist.data.local.entity.ShoppingListEntity>>): kotlin.collections.List<pl.myshoppinglist.data.local.entity.ShoppingListEntity> declared in pl.myshoppinglist.feature.lists.ListsScreenKt' type=kotlin.collections.List<pl.myshoppinglist.data.local.entity.ShoppingListEntity> origin=GET_LOCAL_PROPERTY
+        ARG $lists$delegate: GET_VAR '$lists$delegate: androidx.compose.runtime.State<kotlin.collections.List<pl.myshoppinglist.data.local.entity.ShoppingListEntity>> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8' type=androidx.compose.runtime.State<kotlin.collections.List<pl.myshoppinglist.data.local.entity.ShoppingListEntity>> origin=null
+      ARG key: BLOCK type=kotlin.Function2<kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, kotlin.Any> origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        CALL 'public final fun <jvm-indy> <T> (dynamicCall: T of kotlin.jvm.internal.<jvm-indy>, bootstrapMethodHandle: kotlin.Any, vararg bootstrapMethodArguments: kotlin.Any): T of kotlin.jvm.internal.<jvm-indy> declared in kotlin.jvm.internal' type=kotlin.Function2<kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, kotlin.Any> origin=null
+          TYPE_ARG T: kotlin.Function2<kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, kotlin.Any>
+          ARG dynamicCall: CALL 'public final fun invoke (): kotlin.Function2<kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, kotlin.Any> declared in kotlin.jvm.internal.invokeDynamic' type=kotlin.Function2<kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, kotlin.Any> origin=null
+          ARG bootstrapMethodHandle: CALL 'public final fun <jvm-method-handle> (tag: kotlin.Int, owner: kotlin.String, name: kotlin.String, descriptor: kotlin.String, isInterface: kotlin.Boolean): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+            ARG tag: CONST Int type=kotlin.Int value=6
+            ARG owner: CONST String type=kotlin.String value="java/lang/invoke/LambdaMetafactory"
+            ARG name: CONST String type=kotlin.String value="metafactory"
+            ARG descriptor: CONST String type=kotlin.String value="(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;"
+            ARG isInterface: CONST Boolean type=kotlin.Boolean value=false
+          ARG bootstrapMethodArguments: VARARG type=kotlin.Array<kotlin.Any> varargElementType=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: P1 of kotlin.Function2, p2: P2 of kotlin.Function2): R of kotlin.Function2 [operator] declared in kotlin.Function2' type=kotlin.Any
+            RAW_FUNCTION_REFERENCE 'private final fun ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$6 (<unused var>: kotlin.Int, it: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Any declared in pl.myshoppinglist.feature.lists.ListsScreenKt' type=kotlin.Any
+            CALL 'public final fun <jvm-original-method-type> (method: kotlin.Any): kotlin.Any declared in kotlin.jvm.internal' type=kotlin.Any origin=null
+              ARG method: RAW_FUNCTION_REFERENCE 'public abstract fun invoke (p1: kotlin.Int?, p2: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Any [fake_override,operator] declared in kotlin.jvm.internal.invokeDynamic.<fake>' type=kotlin.Any
+      ARG contentType: COMPOSITE type=kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, @[ParameterName(name = "item")] T of androidx.compose.foundation.lazy.LazyDslKt.itemsIndexed$default, kotlin.Any?>? origin=DEFAULT_VALUE
+        CONST Null type=kotlin.Function2<@[ParameterName(name = "index")] kotlin.Int, @[ParameterName(name = "item")] T of androidx.compose.foundation.lazy.LazyDslKt.itemsIndexed$default, kotlin.Any?>? value=null
+      ARG itemContent: BLOCK type=@[ExtensionFunctionType] kotlin.Function5<androidx.compose.foundation.lazy.LazyItemScope, kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=LAMBDA
+        COMPOSITE type=kotlin.Unit origin=null
+        FUNCTION_REFERENCE 'private final fun ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7 ($this$itemsIndexed: androidx.compose.foundation.lazy.LazyItemScope, $reorderState: org.burnoutcrew.reorderable.ReorderableLazyListState, $viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>?, $unused$var$: kotlin.Int, list: pl.myshoppinglist.data.local.entity.ShoppingListEntity, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt' type=@[ExtensionFunctionType] kotlin.Function5<androidx.compose.foundation.lazy.LazyItemScope, kotlin.Int, pl.myshoppinglist.data.local.entity.ShoppingListEntity, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit> origin=INLINE_LAMBDA reflectionTarget=null
+          ARG $reorderState: GET_VAR '$reorderState: org.burnoutcrew.reorderable.ReorderableLazyListState declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8' type=org.burnoutcrew.reorderable.ReorderableLazyListState origin=null
+          ARG $viewModel: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+          ARG $onOpenListDetail: GET_VAR '$onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+      ARG $mask0: CONST Int type=kotlin.Int value=4
+      ARG $handler: CONST Null type=kotlin.Any? value=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.generateFile(JvmIrCodegenFactory.kt:419)
+	at org.jetbrains.kotlin.backend.jvm.JvmIrCodegenFactory.invokeCodegen(JvmIrCodegenFactory.kt:388)
+	at org.jetbrains.kotlin.cli.jvm.compiler.KotlinToJVMBytecodeCompiler.runCodegen$cli(KotlinToJVMBytecodeCompiler.kt:431)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:95)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:36)
+	at org.jetbrains.kotlin.cli.pipeline.jvm.JvmBackendPipelinePhase.executePhase(JvmBackendPipelinePhase.kt:29)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:68)
+	at org.jetbrains.kotlin.cli.pipeline.PipelinePhase.phaseBody(PipelinePhase.kt:58)
+	at org.jetbrains.kotlin.config.phaser.NamedCompilerPhase.invoke(CompilerPhase.kt:102)
+	at org.jetbrains.kotlin.backend.common.phaser.CompositePhase.invoke(PhaseBuilders.kt:22)
+	at org.jetbrains.kotlin.config.phaser.CompilerPhaseKt.invokeToplevel(CompilerPhase.kt:53)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.runPhasedPipeline(AbstractCliPipeline.kt:109)
+	at org.jetbrains.kotlin.cli.pipeline.AbstractCliPipeline.execute(AbstractCliPipeline.kt:68)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:78)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecutePhased(K2JVMCompiler.kt:44)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:90)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.exec(CLICompiler.kt:352)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:175)
+	at org.jetbrains.kotlin.incremental.IncrementalJvmCompilerRunnerBase.runCompiler(IncrementalJvmCompilerRunnerBase.kt:38)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.doCompile(IncrementalCompilerRunner.kt:504)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileImpl(IncrementalCompilerRunner.kt:421)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compileNonIncrementally(IncrementalCompilerRunner.kt:306)
+	at org.jetbrains.kotlin.incremental.IncrementalCompilerRunner.compile(IncrementalCompilerRunner.kt:133)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.execIncrementalCompiler(CompileServiceImpl.kt:679)
+	at org.jetbrains.kotlin.daemon.CompileServiceImplBase.access$execIncrementalCompiler(CompileServiceImpl.kt:93)
+	at org.jetbrains.kotlin.daemon.CompileServiceImpl.compile(CompileServiceImpl.kt:1806)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN INLINE_LAMBDA name:ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7 visibility:private modality:FINAL returnType:kotlin.Unit
+  VALUE_PARAMETER kind:ExtensionReceiver name:$this$itemsIndexed index:0 type:androidx.compose.foundation.lazy.LazyItemScope
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$reorderState index:1 type:org.burnoutcrew.reorderable.ReorderableLazyListState
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:2 type:pl.myshoppinglist.feature.lists.ListsViewModel
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onOpenListDetail index:3 type:kotlin.Function1<kotlin.Long, kotlin.Unit>?
+  VALUE_PARAMETER UNDERSCORE_PARAMETER kind:Regular name:$unused$var$ index:4 type:kotlin.Int
+  VALUE_PARAMETER kind:Regular name:list index:5 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+  VALUE_PARAMETER kind:Regular name:$composer index:6 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:7 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  BLOCK_BODY
+    VAR name:$i$a$-itemsIndexed$default-ListsScreenKt$ListsScreen$2$1$1$1$2 type:kotlin.Int [val]
+      CONST Int type=kotlin.Int value=0
+    BLOCK type=kotlin.Unit origin=null
+      BLOCK type=kotlin.Unit origin=null
+        CALL 'public abstract fun startReplaceGroup (key: kotlin.Int): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+          ARG key: CONST Int type=kotlin.Int value=779366279
+        CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+          ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+          ARG sourceInformation: CONST String type=kotlin.String value="CN(list)*58@2291L539,58@2227L603:ListsScreen.kt#5zjq4z"
+      COMPOSITE type=kotlin.Unit origin=null
+        CALL 'public final fun ReorderableItem (<this>: androidx.compose.foundation.lazy.LazyItemScope, reorderableState: org.burnoutcrew.reorderable.ReorderableState<*>, key: kotlin.Any?, modifier: androidx.compose.ui.Modifier?, index: kotlin.Int?, orientationLocked: kotlin.Boolean, content: @[ExtensionFunctionType] kotlin.Function4<androidx.compose.foundation.layout.BoxScope, @[ParameterName(name = "isDragging")] kotlin.Boolean, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit declared in org.burnoutcrew.reorderable.ReorderableItemKt' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$this$itemsIndexed: androidx.compose.foundation.lazy.LazyItemScope declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=androidx.compose.foundation.lazy.LazyItemScope origin=null
+          ARG reorderableState: GET_VAR '$reorderState: org.burnoutcrew.reorderable.ReorderableLazyListState declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=org.burnoutcrew.reorderable.ReorderableLazyListState origin=null
+          ARG key: CALL 'public final fun <get-id> (): kotlin.Long declared in pl.myshoppinglist.data.local.entity.ShoppingListEntity' type=kotlin.Long origin=GET_PROPERTY
+            ARG <this>: GET_VAR 'list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+          ARG modifier: COMPOSITE type=kotlin.Nothing? origin=DEFAULT_VALUE
+            CONST Null type=kotlin.Nothing? value=null
+          ARG index: COMPOSITE type=kotlin.Nothing? origin=DEFAULT_VALUE
+            CONST Null type=kotlin.Nothing? value=null
+          ARG orientationLocked: COMPOSITE type=kotlin.Boolean origin=DEFAULT_VALUE
+            CONST Boolean type=kotlin.Boolean value=false
+          ARG content: CALL 'public final fun rememberComposableLambda (key: kotlin.Int, tracked: kotlin.Boolean, block: kotlin.Any, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): androidx.compose.runtime.internal.ComposableLambda declared in androidx.compose.runtime.internal.ComposableLambdaKt' type=androidx.compose.runtime.internal.ComposableLambda origin=null
+            ARG key: CONST Int type=kotlin.Int value=-1009550206
+            ARG tracked: CONST Boolean type=kotlin.Boolean value=true
+            ARG block: BLOCK type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+              CLASS LAMBDA_IMPL CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.Any; kotlin.Function4<androidx.compose.foundation.layout.BoxScope, kotlin.Boolean, androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>]
+                thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>
+                CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> [primary]
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:0 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:1 type:pl.myshoppinglist.feature.lists.ListsViewModel
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onOpenListDetail index:2 type:kotlin.Function1<kotlin.Long, kotlin.Unit>?
+                  BLOCK_BODY
+                    SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                      receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                      value: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.<init>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                    SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                      receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                      value: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.<init>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                    SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                      receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                      value: GET_VAR '$onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.<init>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                    DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                    BLOCK type=kotlin.Unit origin=null
+                FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+                  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>
+                  VALUE_PARAMETER kind:Regular name:$this$ReorderableItem index:1 type:androidx.compose.foundation.layout.BoxScope
+                  VALUE_PARAMETER kind:Regular name:isDragging index:2 type:kotlin.Boolean
+                  VALUE_PARAMETER kind:Regular name:$composer index:3 type:androidx.compose.runtime.Composer? [assignable]
+                  VALUE_PARAMETER kind:Regular name:$changed index:4 type:kotlin.Int
+                  annotations:
+                    Composable
+                    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+                  overridden:
+                    public abstract fun invoke (p1: P1 of kotlin.Function4, p2: P2 of kotlin.Function4, p3: P3 of kotlin.Function4, p4: P4 of kotlin.Function4): R of kotlin.Function4 [operator] declared in kotlin.Function4
+                  BLOCK_BODY
+                    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG sourceInformation: CONST String type=kotlin.String value="CN(isDragging)61@2419L30,62@2490L30,63@2565L29,66@2739L43,59@2331L477:ListsScreen.kt#5zjq4z"
+                    VAR name:$dirty type:kotlin.Int [val]
+                      GET_VAR '$changed: kotlin.Int declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                    WHEN type=kotlin.Unit origin=IF
+                      BRANCH
+                        if: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                          ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                            ARG <this>: GET_VAR '$changed: kotlin.Int declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                            ARG other: CONST Int type=kotlin.Int value=48
+                          ARG arg1: CONST Int type=kotlin.Int value=0
+                        then: SET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Unit origin=null
+                          CALL 'public final fun or (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                            ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                            ARG other: WHEN type=kotlin.Int origin=IF
+                              BRANCH
+                                if: CALL 'public open fun changed (value: kotlin.Boolean): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                  ARG value: GET_VAR 'isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Boolean origin=null
+                                then: CONST Int type=kotlin.Int value=32
+                              BRANCH
+                                if: CONST Boolean type=kotlin.Boolean value=true
+                                then: CONST Int type=kotlin.Int value=16
+                    WHEN type=kotlin.Unit origin=IF
+                      BRANCH
+                        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                              ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                                ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                                ARG other: CONST Int type=kotlin.Int value=145
+                              ARG arg1: CONST Int type=kotlin.Int value=144
+                          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                            ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                            ARG other: CONST Int type=kotlin.Int value=1
+                        then: BLOCK type=kotlin.Unit origin=null
+                          WHEN type=kotlin.Unit origin=IF
+                            BRANCH
+                              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+                              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG key: CONST Int type=kotlin.Int value=-1009550206
+                                ARG dirty1: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                                ARG info: CONST String type=kotlin.String value="pl.myshoppinglist.feature.lists.ListsScreen.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous> (ListsScreen.kt:59)"
+                          CALL 'public final fun ListRow (list: pl.myshoppinglist.data.local.entity.ShoppingListEntity, onClick: kotlin.Function0<kotlin.Unit>, onDelete: kotlin.Function0<kotlin.Unit>, onOpenDetail: kotlin.Function0<kotlin.Unit>, modifier: androidx.compose.ui.Modifier?, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt' type=kotlin.Unit origin=null
+                            ARG list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                              receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                            ARG onClick: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                ARG key: CONST Int type=kotlin.Int value=484865056
+                                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+                              VAR IR_TEMPORARY_VARIABLE name:tmp0_group type:kotlin.Function0<kotlin.Unit> [val]
+                                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                                  TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                  ARG invalid: CALL 'public final fun or (other: kotlin.Boolean): kotlin.Boolean [infix] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                    ARG <this>: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                    ARG other: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                  ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                                    COMPOSITE type=kotlin.Unit origin=null
+                                    FUNCTION_REFERENCE 'private final fun invoke$lambda$0 ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                                      ARG $viewModel: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                      ARG $list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                              GET_VAR 'val tmp0_group: kotlin.Function0<kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Function0<kotlin.Unit> origin=null
+                            ARG onDelete: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                ARG key: CONST Int type=kotlin.Int value=484867328
+                                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+                              VAR IR_TEMPORARY_VARIABLE name:tmp1_group type:kotlin.Function0<kotlin.Unit> [val]
+                                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                                  TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                  ARG invalid: CALL 'public final fun or (other: kotlin.Boolean): kotlin.Boolean [infix] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                    ARG <this>: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                    ARG other: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                  ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                                    COMPOSITE type=kotlin.Unit origin=null
+                                    FUNCTION_REFERENCE 'private final fun invoke$lambda$1 ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                                      ARG $viewModel: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                      ARG $list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                              GET_VAR 'val tmp1_group: kotlin.Function0<kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Function0<kotlin.Unit> origin=null
+                            ARG onOpenDetail: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+                              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                ARG key: CONST Int type=kotlin.Int value=484869727
+                                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+                              VAR IR_TEMPORARY_VARIABLE name:tmp2_group type:kotlin.Function0<kotlin.Unit> [val]
+                                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                                  TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                  ARG invalid: CALL 'public final fun or (other: kotlin.Boolean): kotlin.Boolean [infix] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                                    ARG <this>: CALL 'public abstract fun changed (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                      ARG value: TYPE_OP type=kotlin.Function1<kotlin.Long, kotlin.Unit> origin=IMPLICIT_CAST typeOperand=kotlin.Function1<kotlin.Long, kotlin.Unit>
+                                        GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                                          receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                    ARG other: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                  ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                                    COMPOSITE type=kotlin.Unit origin=null
+                                    FUNCTION_REFERENCE 'private final fun invoke$lambda$2 ($onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>?, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                                      ARG $onOpenListDetail: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                                      ARG $list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                              GET_VAR 'val tmp2_group: kotlin.Function0<kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Function0<kotlin.Unit> origin=null
+                            ARG modifier: CALL 'public final fun graphicsLayer (<this>: androidx.compose.ui.Modifier, block: @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>): androidx.compose.ui.Modifier declared in androidx.compose.ui.graphics.GraphicsLayerModifierKt' type=androidx.compose.ui.Modifier origin=null
+                              ARG <this>: CALL 'public final fun fillMaxWidth$default (<this>: androidx.compose.ui.Modifier, fraction: kotlin.Float, $mask0: kotlin.Int, $handler: kotlin.Any?): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.SizeKt' type=androidx.compose.ui.Modifier origin=DEFAULT_DISPATCH_CALL
+                                ARG <this>: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Modifier.Companion visibility:public [final,static] declared in androidx.compose.ui.Modifier' type=androidx.compose.ui.Modifier.Companion origin=null
+                                ARG fraction: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+                                  CONST Float type=kotlin.Float value=0.0
+                                ARG $mask0: CONST Int type=kotlin.Int value=1
+                                ARG $handler: CONST Null type=kotlin.Any? value=null
+                              ARG block: BLOCK type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> origin=null
+                                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                  ARG key: CONST Int type=kotlin.Int value=484875309
+                                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+                                VAR IR_TEMPORARY_VARIABLE name:tmp3_group type:@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> [val]
+                                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> origin=null
+                                    TYPE_ARG T: @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>
+                                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                    ARG invalid: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                                      ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                                        ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                                        ARG other: CONST Int type=kotlin.Int value=112
+                                      ARG arg1: CONST Int type=kotlin.Int value=32
+                                    ARG block: BLOCK type=kotlin.Function0<@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>> origin=LAMBDA
+                                      COMPOSITE type=kotlin.Unit origin=null
+                                      FUNCTION_REFERENCE 'private final fun invoke$lambda$3 ($isDragging: kotlin.Boolean): @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                                        ARG $isDragging: GET_VAR 'isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Boolean origin=null
+                                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                                GET_VAR 'val tmp3_group: @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> origin=null
+                            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                            ARG $changed: CONST Int type=kotlin.Int value=0
+                            ARG $default: CONST Int type=kotlin.Int value=0
+                          WHEN type=kotlin.Unit origin=IF
+                            BRANCH
+                              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+                              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                      BRANCH
+                        if: CONST Boolean type=kotlin.Boolean value=true
+                        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+                          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final]
+                FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final]
+                FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final]
+                FUN INLINE_LAMBDA name:invoke$lambda$0 visibility:private modality:FINAL returnType:kotlin.Function0<kotlin.Unit>
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:0 type:pl.myshoppinglist.feature.lists.ListsViewModel
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:1 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                  BLOCK_BODY
+                    VAR name:$i$a$-cache-ListsScreenKt$ListsScreen$2$1$1$1$2$1$1 type:kotlin.Int [val]
+                      CONST Int type=kotlin.Int value=0
+                    RETURN type=kotlin.Nothing from='private final fun invoke$lambda$0 ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>'
+                      BLOCK type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                        CLASS LAMBDA_IMPL CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.Any; kotlin.Function0<kotlin.Unit>]
+                          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>
+                          CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> [primary]
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:0 type:pl.myshoppinglist.feature.lists.ListsViewModel
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:1 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                            BLOCK_BODY
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                                value: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>.<init>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                                value: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>.<init>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                              BLOCK type=kotlin.Unit origin=null
+                          FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>
+                            overridden:
+                              public abstract fun invoke (): R of kotlin.Function0 [operator] declared in kotlin.Function0
+                            BLOCK_BODY
+                              CALL 'public final fun openEditor (list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsViewModel' type=kotlin.Unit origin=null
+                                ARG <this>: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                                  receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                                ARG list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                  receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final]
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final]
+                          FUN BRIDGE name:invoke visibility:public modality:OPEN returnType:kotlin.Any?
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>
+                            EXPRESSION_BODY
+                              RETURN type=kotlin.Nothing from='public open fun invoke (): kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>'
+                                CALL 'public final fun invoke (): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                                  ARG <this>: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                        CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity) [primary] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0.<no name provided> origin=null
+                          ARG $viewModel: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                          ARG $list: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$0' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                FUN INLINE_LAMBDA name:invoke$lambda$1 visibility:private modality:FINAL returnType:kotlin.Function0<kotlin.Unit>
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:0 type:pl.myshoppinglist.feature.lists.ListsViewModel
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:1 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                  BLOCK_BODY
+                    VAR name:$i$a$-cache-ListsScreenKt$ListsScreen$2$1$1$1$2$1$2 type:kotlin.Int [val]
+                      CONST Int type=kotlin.Int value=0
+                    RETURN type=kotlin.Nothing from='private final fun invoke$lambda$1 ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>'
+                      BLOCK type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                        CLASS LAMBDA_IMPL CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.Any; kotlin.Function0<kotlin.Unit>]
+                          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>
+                          CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> [primary]
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$viewModel index:0 type:pl.myshoppinglist.feature.lists.ListsViewModel
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:1 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                            BLOCK_BODY
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                                value: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>.<init>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                                value: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>.<init>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                              BLOCK type=kotlin.Unit origin=null
+                          FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>
+                            overridden:
+                              public abstract fun invoke (): R of kotlin.Function0 [operator] declared in kotlin.Function0
+                            BLOCK_BODY
+                              CALL 'public final fun deleteList (list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsViewModel' type=kotlin.Unit origin=null
+                                ARG <this>: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                                  receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                                ARG list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                  receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final]
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final]
+                          FUN BRIDGE name:invoke visibility:public modality:OPEN returnType:kotlin.Any?
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>
+                            EXPRESSION_BODY
+                              RETURN type=kotlin.Nothing from='public open fun invoke (): kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>'
+                                CALL 'public final fun invoke (): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                                  ARG <this>: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                        CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity) [primary] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1.<no name provided> origin=null
+                          ARG $viewModel: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                          ARG $list: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$1' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                FUN INLINE_LAMBDA name:invoke$lambda$2 visibility:private modality:FINAL returnType:kotlin.Function0<kotlin.Unit>
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onOpenListDetail index:0 type:kotlin.Function1<kotlin.Long, kotlin.Unit>?
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:1 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                  BLOCK_BODY
+                    VAR name:$i$a$-cache-ListsScreenKt$ListsScreen$2$1$1$1$2$1$3 type:kotlin.Int [val]
+                      CONST Int type=kotlin.Int value=0
+                    RETURN type=kotlin.Nothing from='private final fun invoke$lambda$2 ($onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>?, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>'
+                      BLOCK type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                        CLASS LAMBDA_IMPL CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.Any; kotlin.Function0<kotlin.Unit>]
+                          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>
+                          CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> [primary]
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$onOpenListDetail index:0 type:kotlin.Function1<kotlin.Long, kotlin.Unit>?
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$list index:1 type:pl.myshoppinglist.data.local.entity.ShoppingListEntity
+                            BLOCK_BODY
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                                value: GET_VAR '$onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>.<init>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                                value: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>.<init>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                              BLOCK type=kotlin.Unit origin=null
+                          FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>
+                            overridden:
+                              public abstract fun invoke (): R of kotlin.Function0 [operator] declared in kotlin.Function0
+                            BLOCK_BODY
+                              CALL 'public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1' type=kotlin.Unit origin=INVOKE
+                                ARG <this>: TYPE_OP type=kotlin.Function1<kotlin.Long, kotlin.Unit> origin=IMPLICIT_CAST typeOperand=kotlin.Function1<kotlin.Long, kotlin.Unit>
+                                  GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                                    receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                                ARG p1: CALL 'public final fun <get-id> (): kotlin.Long declared in pl.myshoppinglist.data.local.entity.ShoppingListEntity' type=kotlin.Long origin=GET_PROPERTY
+                                  ARG <this>: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                                    receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final]
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final]
+                          FUN BRIDGE name:invoke visibility:public modality:OPEN returnType:kotlin.Any?
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>
+                            EXPRESSION_BODY
+                              RETURN type=kotlin.Nothing from='public open fun invoke (): kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>'
+                                CALL 'public final fun invoke (): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                                  ARG <this>: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                        CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>?, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity) [primary] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2.<no name provided> origin=null
+                          ARG $onOpenListDetail: GET_VAR '$onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                          ARG $list: GET_VAR '$list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$2' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                FUN INLINE_LAMBDA name:invoke$lambda$3 visibility:private modality:FINAL returnType:@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>
+                  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$isDragging index:0 type:kotlin.Boolean
+                  BLOCK_BODY
+                    VAR name:$i$a$-cache-ListsScreenKt$ListsScreen$2$1$1$1$2$1$4 type:kotlin.Int [val]
+                      CONST Int type=kotlin.Int value=0
+                    RETURN type=kotlin.Nothing from='private final fun invoke$lambda$3 ($isDragging: kotlin.Boolean): @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>'
+                      BLOCK type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                        CLASS LAMBDA_IMPL CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.Any; kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>]
+                          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+                          CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> [primary]
+                            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$isDragging index:0 type:kotlin.Boolean
+                            BLOCK_BODY
+                              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                                value: GET_VAR '$isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.<init>' type=kotlin.Boolean origin=null
+                              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+                              BLOCK type=kotlin.Unit origin=null
+                          FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+                            VALUE_PARAMETER kind:Regular name:$this$graphicsLayer index:1 type:androidx.compose.ui.graphics.GraphicsLayerScope
+                            overridden:
+                              public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1
+                            BLOCK_BODY
+                              SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:translationZ type:kotlin.Int visibility:public [final,static] declared in android.R.attr' type=kotlin.Unit superQualifierSymbol=android.R.attr origin=EQ
+                                value: WHEN type=kotlin.Int origin=IF
+                                  BRANCH
+                                    if: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Boolean origin=null
+                                      receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                                    then: CONST Int type=kotlin.Int value=8
+                                  BRANCH
+                                    if: CONST Boolean type=kotlin.Boolean value=true
+                                    then: CONST Int type=kotlin.Int value=0
+                          FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final]
+                          FUN BRIDGE name:invoke visibility:public modality:OPEN returnType:kotlin.Any?
+                            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+                            VALUE_PARAMETER BRIDGE kind:Regular name:p1 index:1 type:kotlin.Any?
+                            EXPRESSION_BODY
+                              RETURN type=kotlin.Nothing from='public open fun invoke (p1: kotlin.Any?): kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>'
+                                CALL 'public final fun invoke ($this$graphicsLayer: androidx.compose.ui.graphics.GraphicsLayerScope): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                                  ARG <this>: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                                  ARG $this$graphicsLayer: TYPE_OP type=androidx.compose.ui.graphics.GraphicsLayerScope origin=IMPLICIT_CAST typeOperand=androidx.compose.ui.graphics.GraphicsLayerScope
+                                    GET_VAR 'p1: kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=kotlin.Any? origin=null
+                        CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($isDragging: kotlin.Boolean) [primary] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                          ARG $isDragging: GET_VAR '$isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3' type=kotlin.Boolean origin=null
+                FUN BRIDGE name:invoke visibility:public modality:OPEN returnType:kotlin.Any?
+                  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>
+                  VALUE_PARAMETER BRIDGE kind:Regular name:p1 index:1 type:kotlin.Any?
+                  VALUE_PARAMETER BRIDGE kind:Regular name:p2 index:2 type:kotlin.Any?
+                  VALUE_PARAMETER BRIDGE kind:Regular name:p3 index:3 type:kotlin.Any?
+                  VALUE_PARAMETER BRIDGE kind:Regular name:p4 index:4 type:kotlin.Any?
+                  EXPRESSION_BODY
+                    RETURN type=kotlin.Nothing from='public open fun invoke (p1: kotlin.Any?, p2: kotlin.Any?, p3: kotlin.Any?, p4: kotlin.Any?): kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>'
+                      CALL 'public final fun invoke ($this$ReorderableItem: androidx.compose.foundation.layout.BoxScope, isDragging: kotlin.Boolean, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                        ARG <this>: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                        ARG $this$ReorderableItem: TYPE_OP type=androidx.compose.foundation.layout.BoxScope origin=IMPLICIT_CAST typeOperand=androidx.compose.foundation.layout.BoxScope
+                          GET_VAR 'p1: kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Any? origin=null
+                        ARG isDragging: TYPE_OP type=kotlin.Boolean origin=IMPLICIT_CAST typeOperand=kotlin.Boolean
+                          GET_VAR 'p2: kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Any? origin=null
+                        ARG $composer: TYPE_OP type=androidx.compose.runtime.Composer origin=IMPLICIT_CAST typeOperand=androidx.compose.runtime.Composer
+                          GET_VAR 'p3: kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Any? origin=null
+                        ARG $changed: TYPE_OP type=kotlin.Int origin=IMPLICIT_CAST typeOperand=kotlin.Int
+                          GET_VAR 'p4: kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Any? origin=null
+              CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($list: pl.myshoppinglist.data.local.entity.ShoppingListEntity, $viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>?) [primary] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                ARG $list: GET_VAR 'list: pl.myshoppinglist.data.local.entity.ShoppingListEntity declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                ARG $viewModel: GET_VAR '$viewModel: pl.myshoppinglist.feature.lists.ListsViewModel declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                ARG $onOpenListDetail: GET_VAR '$onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+            ARG $changed: CONST Int type=kotlin.Int value=54
+          ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+          ARG $changed: CALL 'public final fun or (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: CALL 'public final fun or (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+              ARG <this>: CONST Int type=kotlin.Int value=1572864
+              ARG other: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                ARG <this>: CONST Int type=kotlin.Int value=14
+                ARG other: GET_VAR '$changed: kotlin.Int declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=kotlin.Int origin=null
+            ARG other: CALL 'public final fun shl (bitCount: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+              ARG <this>: GET_FIELD 'FIELD name:$stable type:kotlin.Int visibility:public [final,static] declared in org.burnoutcrew.reorderable.ReorderableLazyListState' type=kotlin.Int origin=null
+              ARG bitCount: CONST Int type=kotlin.Int value=3
+          ARG $default: CONST Int type=kotlin.Int value=28
+      CALL 'public abstract fun endReplaceGroup (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+        ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.generateLambdaBody(IrSourceCompilerForInline.kt:72)
+	at org.jetbrains.kotlin.codegen.inline.ExpressionLambda.generateLambdaBody(LambdaInfo.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genValueAndPut(IrInlineCodegen.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 47 more
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>
+  VALUE_PARAMETER kind:Regular name:$this$ReorderableItem index:1 type:androidx.compose.foundation.layout.BoxScope
+  VALUE_PARAMETER kind:Regular name:isDragging index:2 type:kotlin.Boolean
+  VALUE_PARAMETER kind:Regular name:$composer index:3 type:androidx.compose.runtime.Composer? [assignable]
+  VALUE_PARAMETER kind:Regular name:$changed index:4 type:kotlin.Int
+  annotations:
+    Composable
+    ComposableTarget(applier = "androidx.compose.ui.UiComposable")
+  overridden:
+    public abstract fun invoke (p1: P1 of kotlin.Function4, p2: P2 of kotlin.Function4, p3: P3 of kotlin.Function4, p4: P4 of kotlin.Function4): R of kotlin.Function4 [operator] declared in kotlin.Function4
+  BLOCK_BODY
+    CALL 'public final fun sourceInformation (composer: androidx.compose.runtime.Composer, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+      ARG sourceInformation: CONST String type=kotlin.String value="CN(isDragging)61@2419L30,62@2490L30,63@2565L29,66@2739L43,59@2331L477:ListsScreen.kt#5zjq4z"
+    VAR name:$dirty type:kotlin.Int [val]
+      GET_VAR '$changed: kotlin.Int declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+          ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR '$changed: kotlin.Int declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=48
+          ARG arg1: CONST Int type=kotlin.Int value=0
+        then: SET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Unit origin=null
+          CALL 'public final fun or (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+            ARG other: WHEN type=kotlin.Int origin=IF
+              BRANCH
+                if: CALL 'public open fun changed (value: kotlin.Boolean): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                  ARG value: GET_VAR 'isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Boolean origin=null
+                then: CONST Int type=kotlin.Int value=32
+              BRANCH
+                if: CONST Boolean type=kotlin.Boolean value=true
+                then: CONST Int type=kotlin.Int value=16
+    WHEN type=kotlin.Unit origin=IF
+      BRANCH
+        if: CALL 'public abstract fun shouldExecute (parametersChanged: kotlin.Boolean, flags: kotlin.Int): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+          ARG parametersChanged: CALL 'public final fun not (): kotlin.Boolean [operator] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+            ARG <this>: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+              ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                ARG other: CONST Int type=kotlin.Int value=145
+              ARG arg1: CONST Int type=kotlin.Int value=144
+          ARG flags: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+            ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+            ARG other: CONST Int type=kotlin.Int value=1
+        then: BLOCK type=kotlin.Unit origin=null
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventStart (key: kotlin.Int, dirty1: kotlin.Int, dirty2: kotlin.Int, info: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG key: CONST Int type=kotlin.Int value=-1009550206
+                ARG dirty1: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                ARG dirty2: CONST Int type=kotlin.Int value=-1
+                ARG info: CONST String type=kotlin.String value="pl.myshoppinglist.feature.lists.ListsScreen.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous> (ListsScreen.kt:59)"
+          CALL 'public final fun ListRow (list: pl.myshoppinglist.data.local.entity.ShoppingListEntity, onClick: kotlin.Function0<kotlin.Unit>, onDelete: kotlin.Function0<kotlin.Unit>, onOpenDetail: kotlin.Function0<kotlin.Unit>, modifier: androidx.compose.ui.Modifier?, $composer: androidx.compose.runtime.Composer?, $changed: kotlin.Int, $default: kotlin.Int): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt' type=kotlin.Unit origin=null
+            ARG list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+              receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+            ARG onClick: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                ARG key: CONST Int type=kotlin.Int value=484865056
+                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+              VAR IR_TEMPORARY_VARIABLE name:tmp0_group type:kotlin.Function0<kotlin.Unit> [val]
+                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                  TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                  ARG invalid: CALL 'public final fun or (other: kotlin.Boolean): kotlin.Boolean [infix] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                    ARG <this>: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                    ARG other: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                  ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                    COMPOSITE type=kotlin.Unit origin=null
+                    FUNCTION_REFERENCE 'private final fun invoke$lambda$0 ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                      ARG $viewModel: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                      ARG $list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+              GET_VAR 'val tmp0_group: kotlin.Function0<kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Function0<kotlin.Unit> origin=null
+            ARG onDelete: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                ARG key: CONST Int type=kotlin.Int value=484867328
+                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+              VAR IR_TEMPORARY_VARIABLE name:tmp1_group type:kotlin.Function0<kotlin.Unit> [val]
+                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                  TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                  ARG invalid: CALL 'public final fun or (other: kotlin.Boolean): kotlin.Boolean [infix] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                    ARG <this>: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                    ARG other: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                  ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                    COMPOSITE type=kotlin.Unit origin=null
+                    FUNCTION_REFERENCE 'private final fun invoke$lambda$1 ($viewModel: pl.myshoppinglist.feature.lists.ListsViewModel, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                      ARG $viewModel: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$viewModel type:pl.myshoppinglist.feature.lists.ListsViewModel visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsViewModel origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                      ARG $list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+              GET_VAR 'val tmp1_group: kotlin.Function0<kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Function0<kotlin.Unit> origin=null
+            ARG onOpenDetail: BLOCK type=kotlin.Function0<kotlin.Unit> origin=null
+              CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                ARG key: CONST Int type=kotlin.Int value=484869727
+                ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+              VAR IR_TEMPORARY_VARIABLE name:tmp2_group type:kotlin.Function0<kotlin.Unit> [val]
+                CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=kotlin.Function0<kotlin.Unit> origin=null
+                  TYPE_ARG T: kotlin.Function0<kotlin.Unit>
+                  ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                  ARG invalid: CALL 'public final fun or (other: kotlin.Boolean): kotlin.Boolean [infix] declared in kotlin.Boolean' type=kotlin.Boolean origin=null
+                    ARG <this>: CALL 'public abstract fun changed (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG value: TYPE_OP type=kotlin.Function1<kotlin.Long, kotlin.Unit> origin=IMPLICIT_CAST typeOperand=kotlin.Function1<kotlin.Long, kotlin.Unit>
+                        GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                          receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                    ARG other: CALL 'public open fun changedInstance (value: kotlin.Any?): kotlin.Boolean declared in androidx.compose.runtime.Composer' type=kotlin.Boolean origin=null
+                      ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                      ARG value: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                  ARG block: BLOCK type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=LAMBDA
+                    COMPOSITE type=kotlin.Unit origin=null
+                    FUNCTION_REFERENCE 'private final fun invoke$lambda$2 ($onOpenListDetail: kotlin.Function1<kotlin.Long, kotlin.Unit>?, $list: pl.myshoppinglist.data.local.entity.ShoppingListEntity): kotlin.Function0<kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<kotlin.Function0<kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                      ARG $onOpenListDetail: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$onOpenListDetail type:kotlin.Function1<kotlin.Long, kotlin.Unit>? visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function1<kotlin.Long, kotlin.Unit>? origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+                      ARG $list: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$list type:pl.myshoppinglist.data.local.entity.ShoppingListEntity visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=pl.myshoppinglist.data.local.entity.ShoppingListEntity origin=null
+                        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided> origin=null
+              CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+              GET_VAR 'val tmp2_group: kotlin.Function0<kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Function0<kotlin.Unit> origin=null
+            ARG modifier: CALL 'public final fun graphicsLayer (<this>: androidx.compose.ui.Modifier, block: @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>): androidx.compose.ui.Modifier declared in androidx.compose.ui.graphics.GraphicsLayerModifierKt' type=androidx.compose.ui.Modifier origin=null
+              ARG <this>: CALL 'public final fun fillMaxWidth$default (<this>: androidx.compose.ui.Modifier, fraction: kotlin.Float, $mask0: kotlin.Int, $handler: kotlin.Any?): androidx.compose.ui.Modifier declared in androidx.compose.foundation.layout.SizeKt' type=androidx.compose.ui.Modifier origin=DEFAULT_DISPATCH_CALL
+                ARG <this>: GET_FIELD 'FIELD FIELD_FOR_OBJECT_INSTANCE name:Companion type:androidx.compose.ui.Modifier.Companion visibility:public [final,static] declared in androidx.compose.ui.Modifier' type=androidx.compose.ui.Modifier.Companion origin=null
+                ARG fraction: COMPOSITE type=kotlin.Float origin=DEFAULT_VALUE
+                  CONST Float type=kotlin.Float value=0.0
+                ARG $mask0: CONST Int type=kotlin.Int value=1
+                ARG $handler: CONST Null type=kotlin.Any? value=null
+              ARG block: BLOCK type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> origin=null
+                CALL 'public final fun sourceInformationMarkerStart (composer: androidx.compose.runtime.Composer, key: kotlin.Int, sourceInformation: kotlin.String): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                  ARG key: CONST Int type=kotlin.Int value=484875309
+                  ARG sourceInformation: CONST String type=kotlin.String value="CC(remember):ListsScreen.kt#9igjgp"
+                VAR IR_TEMPORARY_VARIABLE name:tmp3_group type:@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> [val]
+                  CALL 'public final fun cache <T> (<this>: androidx.compose.runtime.Composer, invalid: kotlin.Boolean, block: @[DisallowComposableCalls] kotlin.Function0<T of androidx.compose.runtime.ComposerKt.cache>): T of androidx.compose.runtime.ComposerKt.cache [inline] declared in androidx.compose.runtime.ComposerKt' type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> origin=null
+                    TYPE_ARG T: @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>
+                    ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                    ARG invalid: CALL 'public final fun EQEQ (arg0: kotlin.Any?, arg1: kotlin.Any?): kotlin.Boolean declared in kotlin.internal.ir' type=kotlin.Boolean origin=null
+                      ARG arg0: CALL 'public final fun and (other: kotlin.Int): kotlin.Int [infix] declared in kotlin.Int' type=kotlin.Int origin=null
+                        ARG <this>: GET_VAR 'val $dirty: kotlin.Int [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Int origin=null
+                        ARG other: CONST Int type=kotlin.Int value=112
+                      ARG arg1: CONST Int type=kotlin.Int value=32
+                    ARG block: BLOCK type=kotlin.Function0<@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>> origin=LAMBDA
+                      COMPOSITE type=kotlin.Unit origin=null
+                      FUNCTION_REFERENCE 'private final fun invoke$lambda$3 ($isDragging: kotlin.Boolean): @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>' type=kotlin.Function0<@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>> origin=INLINE_LAMBDA reflectionTarget=null
+                        ARG $isDragging: GET_VAR 'isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=kotlin.Boolean origin=null
+                CALL 'public final fun sourceInformationMarkerEnd (composer: androidx.compose.runtime.Composer): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+                  ARG composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+                GET_VAR 'val tmp3_group: @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> [val] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> origin=null
+            ARG $composer: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+            ARG $changed: CONST Int type=kotlin.Int value=0
+            ARG $default: CONST Int type=kotlin.Int value=0
+          WHEN type=kotlin.Unit origin=IF
+            BRANCH
+              if: CALL 'public final fun isTraceInProgress (): kotlin.Boolean declared in androidx.compose.runtime.ComposerKt' type=kotlin.Boolean origin=null
+              then: CALL 'public final fun traceEventEnd (): kotlin.Unit declared in androidx.compose.runtime.ComposerKt' type=kotlin.Unit origin=null
+      BRANCH
+        if: CONST Boolean type=kotlin.Boolean value=true
+        then: CALL 'public abstract fun skipToGroupEnd (): kotlin.Unit declared in androidx.compose.runtime.Composer' type=kotlin.Unit origin=null
+          ARG <this>: GET_VAR '$composer: androidx.compose.runtime.Composer? [assignable] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke' type=androidx.compose.runtime.Composer? origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:951)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrClass.accept(IrClass.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:214)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:214)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitComposite(IrVisitor.kt:125)
+	at org.jetbrains.kotlin.ir.expressions.IrComposite.accept(IrComposite.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 61 more
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN INLINE_LAMBDA name:invoke$lambda$3 visibility:private modality:FINAL returnType:@[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>
+  VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$isDragging index:0 type:kotlin.Boolean
+  BLOCK_BODY
+    VAR name:$i$a$-cache-ListsScreenKt$ListsScreen$2$1$1$1$2$1$4 type:kotlin.Int [val]
+      CONST Int type=kotlin.Int value=0
+    RETURN type=kotlin.Nothing from='private final fun invoke$lambda$3 ($isDragging: kotlin.Boolean): @[ExtensionFunctionType] kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>'
+      BLOCK type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+        CLASS LAMBDA_IMPL CLASS name:<no name provided> modality:FINAL visibility:public/*package*/ superTypes:[kotlin.Any; kotlin.Function1<androidx.compose.ui.graphics.GraphicsLayerScope, kotlin.Unit>]
+          thisReceiver: VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+          CONSTRUCTOR GENERATED_MEMBER_IN_CALLABLE_REFERENCE visibility:public/*package*/ returnType:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> [primary]
+            VALUE_PARAMETER BOUND_VALUE_PARAMETER kind:Regular name:$isDragging index:0 type:kotlin.Boolean
+            BLOCK_BODY
+              SET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Unit origin=INITIALIZER_OF_FIELD_FOR_CAPTURED_VALUE
+                receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                value: GET_VAR '$isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.<init>' type=kotlin.Boolean origin=null
+              DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+              BLOCK type=kotlin.Unit origin=null
+          FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+            VALUE_PARAMETER kind:Regular name:$this$graphicsLayer index:1 type:androidx.compose.ui.graphics.GraphicsLayerScope
+            overridden:
+              public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1
+            BLOCK_BODY
+              SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:translationZ type:kotlin.Int visibility:public [final,static] declared in android.R.attr' type=kotlin.Unit superQualifierSymbol=android.R.attr origin=EQ
+                value: WHEN type=kotlin.Int origin=IF
+                  BRANCH
+                    if: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Boolean origin=null
+                      receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                    then: CONST Int type=kotlin.Int value=8
+                  BRANCH
+                    if: CONST Boolean type=kotlin.Boolean value=true
+                    then: CONST Int type=kotlin.Int value=0
+          FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final]
+          FUN BRIDGE name:invoke visibility:public modality:OPEN returnType:kotlin.Any?
+            VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+            VALUE_PARAMETER BRIDGE kind:Regular name:p1 index:1 type:kotlin.Any?
+            EXPRESSION_BODY
+              RETURN type=kotlin.Nothing from='public open fun invoke (p1: kotlin.Any?): kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>'
+                CALL 'public final fun invoke ($this$graphicsLayer: androidx.compose.ui.graphics.GraphicsLayerScope): kotlin.Unit declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Unit origin=BRIDGE_DELEGATION
+                  ARG <this>: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+                  ARG $this$graphicsLayer: TYPE_OP type=androidx.compose.ui.graphics.GraphicsLayerScope origin=IMPLICIT_CAST typeOperand=androidx.compose.ui.graphics.GraphicsLayerScope
+                    GET_VAR 'p1: kotlin.Any? declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=kotlin.Any? origin=null
+        CONSTRUCTOR_CALL 'public/*package*/ constructor <init> ($isDragging: kotlin.Boolean) [primary] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+          ARG $isDragging: GET_VAR '$isDragging: kotlin.Boolean declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3' type=kotlin.Boolean origin=null
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrSourceCompilerForInline.generateLambdaBody(IrSourceCompilerForInline.kt:72)
+	at org.jetbrains.kotlin.codegen.inline.ExpressionLambda.generateLambdaBody(LambdaInfo.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrInlineCodegen.genValueAndPut(IrInlineCodegen.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:725)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitVariable(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrVariable.accept(IrVariable.kt:36)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:214)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.gen(ExpressionCodegen.kt:214)
+	at org.jetbrains.kotlin.backend.jvm.codegen.IrCallGenerator.genValueAndPut(IrCallGenerator.kt:48)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall$handleParameter(ExpressionCodegen.kt:564)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:577)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitCall(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrCall.accept(IrCall.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:1049)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitWhen(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrWhen.accept(IrWhen.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 106 more
+Caused by: java.lang.RuntimeException: Exception while generating code for:
+FUN name:invoke visibility:public modality:FINAL returnType:kotlin.Unit
+  VALUE_PARAMETER INSTANCE_RECEIVER kind:DispatchReceiver name:<this> index:0 type:pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>
+  VALUE_PARAMETER kind:Regular name:$this$graphicsLayer index:1 type:androidx.compose.ui.graphics.GraphicsLayerScope
+  overridden:
+    public abstract fun invoke (p1: P1 of kotlin.Function1): R of kotlin.Function1 [operator] declared in kotlin.Function1
+  BLOCK_BODY
+    SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:translationZ type:kotlin.Int visibility:public [final,static] declared in android.R.attr' type=kotlin.Unit superQualifierSymbol=android.R.attr origin=EQ
+      value: WHEN type=kotlin.Int origin=IF
+        BRANCH
+          if: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Boolean origin=null
+            receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+          then: CONST Int type=kotlin.Int value=8
+        BRANCH
+          if: CONST Boolean type=kotlin.Boolean value=true
+          then: CONST Int type=kotlin.Int value=0
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:50)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate$default(FunctionCodegen.kt:43)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethodNode(ClassCodegen.kt:422)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generateMethod(ClassCodegen.kt:439)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ClassCodegen.generate(ClassCodegen.kt:164)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:951)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitClass(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.declarations.IrClass.accept(IrClass.kt:72)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:541)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitContainerExpression(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitBlock(IrVisitor.kt:122)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:413)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlock(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlock.accept(IrBlock.kt:18)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitReturn(ExpressionCodegen.kt:999)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitReturn(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrReturn.accept(IrReturn.kt:24)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 152 more
+Caused by: java.lang.AssertionError: access of const val: SET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:translationZ type:kotlin.Int visibility:public [final,static] declared in android.R.attr' type=kotlin.Unit superQualifierSymbol=android.R.attr origin=EQ
+  value: WHEN type=kotlin.Int origin=IF
+    BRANCH
+      if: GET_FIELD 'FIELD FIELD_FOR_CAPTURED_VALUE name:$isDragging type:kotlin.Boolean visibility:public/*package*/ [final] declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>' type=kotlin.Boolean origin=null
+        receiver: GET_VAR '<this>: pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> declared in pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided>.invoke' type=pl.myshoppinglist.feature.lists.ListsScreenKt.ListsScreen$lambda$17$lambda$16$lambda$9$lambda$8$lambda$7.<no name provided>.invoke$lambda$3.<no name provided> origin=null
+      then: CONST Int type=kotlin.Int value=8
+    BRANCH
+      if: CONST Boolean type=kotlin.Boolean value=true
+      then: CONST Int type=kotlin.Int value=0
+
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:807)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitFieldAccess(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.visitors.IrVisitor.visitSetField(IrVisitor.kt:215)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:858)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitSetField(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrSetField.accept(IrSetField.kt:21)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitStatementContainer(ExpressionCodegen.kt:527)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:532)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.visitBlockBody(ExpressionCodegen.kt:135)
+	at org.jetbrains.kotlin.ir.expressions.IrBlockBody.accept(IrBlockBody.kt:20)
+	at org.jetbrains.kotlin.backend.jvm.codegen.ExpressionCodegen.generate(ExpressionCodegen.kt:233)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.doGenerate(FunctionCodegen.kt:126)
+	at org.jetbrains.kotlin.backend.jvm.codegen.FunctionCodegen.generate(FunctionCodegen.kt:47)
+	... 176 more
+
+

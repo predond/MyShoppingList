@@ -1,0 +1,10 @@
+package pl.myshoppinglist.domain.model
+
+import java.time.Instant
+
+data class ShoppingList(
+    val id: Long,
+    val name: String,
+    val createdAt: Instant,
+    val archived: Boolean
+)
