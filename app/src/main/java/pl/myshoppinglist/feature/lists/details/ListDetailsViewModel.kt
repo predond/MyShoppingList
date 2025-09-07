@@ -27,10 +27,6 @@ class ListDetailsViewModel @Inject constructor(
 
     val itemsFlow: Flow<List<ShoppingItemEntity>> = itemDao.observeAll()
 
-    fun toggleChecked(itemId: Long, checked: Boolean) {
-        viewModelScope.launch { itemDao.setChecked(itemId, checked) }
-    }
-
     fun deleteItem(item: ShoppingItemEntity) {
         viewModelScope.launch { itemDao.delete(item) }
     }

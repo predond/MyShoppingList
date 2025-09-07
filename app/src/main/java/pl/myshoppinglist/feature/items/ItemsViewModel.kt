@@ -41,7 +41,6 @@ class ItemsViewModel @Inject constructor(
     fun insertItem(item: ShoppingItemEntity) = viewModelScope.launch { itemDao.upsert(item) }
     fun updateItem(item: ShoppingItemEntity) = viewModelScope.launch { itemDao.upsert(item) }
     fun deleteItem(item: ShoppingItemEntity) = viewModelScope.launch { itemDao.delete(item) }
-    fun toggleChecked(item: ShoppingItemEntity) = viewModelScope.launch { itemDao.setChecked(item.id, !item.checked) }
 
     // tworzenie niestandardowej kategorii/storage zwraca id
     suspend fun createCategory(name: String, color: Int = Color.White.toArgb()): Long = categoryDao.upsert(CategoryEntity(name = name, color = color))

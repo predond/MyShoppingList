@@ -47,7 +47,6 @@ fun ShoppingListDetailScreen(
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     items(items, key = { it.id }) { item ->
                         ShoppingListItemRow(item = item,
-                            onCheck = { checked -> viewModel.toggleChecked(item.id, checked) },
                             onDelete = { viewModel.deleteItem(item) }
                         )
                     }
@@ -68,7 +67,7 @@ fun ShoppingListDetailScreen(
 }
 
 @Composable
-private fun ShoppingListItemRow(item: ShoppingItemEntity, onCheck: (Boolean) -> Unit, onDelete: () -> Unit) {
+private fun ShoppingListItemRow(item: ShoppingItemEntity, onDelete: () -> Unit) {
     Card(modifier = Modifier
         .fillMaxWidth()
         .padding(horizontal = 12.dp, vertical = 6.dp)
@@ -79,7 +78,6 @@ private fun ShoppingListItemRow(item: ShoppingItemEntity, onCheck: (Boolean) -> 
                 .padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Checkbox(checked = item.checked, onCheckedChange = onCheck)
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
                 Text(text = item.name)

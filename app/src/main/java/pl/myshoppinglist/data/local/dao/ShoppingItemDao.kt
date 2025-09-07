@@ -23,9 +23,6 @@ interface ShoppingItemDao {
     @Update
     suspend fun update(item: ShoppingItemEntity)
 
-    @Query("UPDATE shopping_items SET checked = :checked WHERE id = :id")
-    suspend fun setChecked(id: Long, checked: Boolean)
-
     @Delete
     suspend fun delete(item: ShoppingItemEntity)
 }
